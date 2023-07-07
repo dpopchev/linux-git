@@ -1,4 +1,4 @@
-# linux-readline
+# linux-git
 
 Configuration to distribute for `git`.
 
