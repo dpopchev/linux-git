@@ -44,7 +44,7 @@ endef
 stamp_dir := .stamps
 src_dir := src
 
-configs := gitconfig
+configs := gitconfig gitattributes
 config_dsts := $(addprefix ${HOME}/.,$(configs))
 config_stamps := $(addprefix $(stamp_dir)/,$(addsuffix .stamp,$(configs)))
 

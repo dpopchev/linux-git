@@ -29,5 +29,7 @@
 [pretty]
         pretty-log = format:%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]
 [filter "gitignore"]
-    clean = "sed '/#[[:blank:]]*gitignore[[:blank:]]*$/'d"
-    smudge = cat
+	clean = "sed '/#[[:blank:]]*gitignore[[:blank:]]*$/d'"
+	smudge = cat
+[core]
+	attributesFile = /home/dimitar/.gitattributes
