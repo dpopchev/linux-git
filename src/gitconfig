@@ -13,7 +13,6 @@
         s = status --short --branch
         ss = status
         a = add
-        A = add .
         u = add -u
         d = diff
         cm = commit --message
