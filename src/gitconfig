@@ -34,3 +34,5 @@
 	smudge = cat
 [core]
 	attributesFile = /home/dimitar/.gitattributes
+[pull]
+	ff = only
