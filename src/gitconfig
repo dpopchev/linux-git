@@ -17,8 +17,7 @@
         d = diff
         cm = commit --message
         ca = commit --amend --no-edit
-        cc = commit --message 'duty message for self-explanatory changes'
-        cw = commit --message 'work in progress; forced track'
+        cc = commit --message 'work in progress; forced track'
         p = push
         ll = log --oneline
         last = log -1 HEAD --stat
@@ -32,8 +31,6 @@
         # NOTE: user-* is a class of aliases that are environment dependant
         # NOTE: recommend ignore line from tracking with gitattribute filter
         # user-* = !git config --get user.name && git config --get user.email
-        user-me = !git config user.name 'Dimitar Popchev' && git config user.email 'dpopchev@gmail.com' # gitignore
-        user-gf = !git config user.name 'Dimitar Popchev' && git config user.email 'dpopchev@gfoundries.com' # gitignore
 [pretty]
         pretty-log = format:%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]
 [filter "gitignore"]
