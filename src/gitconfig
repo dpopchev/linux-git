@@ -29,6 +29,11 @@
         gl = config --global --list
         r = rev-parse --show-toplevel
         who = !git config --get user.name && git config --get user.email
+        # NOTE: user-* is a class of aliases that are environment dependant
+        # NOTE: recommend ignore line from tracking with gitattribute filter
+        # user-* = !git config --get user.name && git config --get user.email
+        user-me = !git config user.name 'Dimitar Popchev' && git config user.email 'dpopchev@gmail.com' # gitignore
+        user-gf = !git config user.name 'Dimitar Popchev' && git config user.email 'dpopchev@gfoundries.com' # gitignore
 [pretty]
         pretty-log = format:%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]
 [filter "gitignore"]
