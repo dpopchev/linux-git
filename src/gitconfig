@@ -28,6 +28,7 @@
         f = !git fetch && git checkout
         gl = config --global --list
         r = rev-parse --show-toplevel
+        who = !git config --get user.name && git config --get user.email
 [pretty]
         pretty-log = format:%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]
 [filter "gitignore"]
