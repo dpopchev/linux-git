@@ -17,7 +17,8 @@
         d = diff
         cm = commit --message
         ca = commit --amend --no-edit
-        cc = commit --message 'chore: duty message for small self-explanatory changes'
+        cc = commit --message 'duty message for self-explanatory changes'
+        cw = commit --message 'work in progress; forced track'
         p = push
         ll = log --oneline
         last = log -1 HEAD --stat
