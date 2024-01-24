@@ -40,6 +40,6 @@
         clean = "sed '/#[[:blank:]]*gitignore[[:blank:]]*$/d'"
         smudge = cat
 [core]
-	attributesFile = /home/dimitar/.gitattributes
+        attributesFile = /home/dimitar/.gitattributes
 [pull]
-	ff = only
+        ff = only
