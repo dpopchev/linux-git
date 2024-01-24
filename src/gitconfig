@@ -17,7 +17,7 @@
         d = diff
         cm = commit --message
         ca = commit --amend --no-edit
-        cc = commit --message 'work in progress; forced track'
+        cc = commit --message 'work in progress, forced track'
         p = push
         ll = log --oneline
         last = log -1 HEAD --stat
