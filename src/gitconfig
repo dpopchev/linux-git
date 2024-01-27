@@ -17,7 +17,7 @@
         d = diff
         cm = commit --message
         ca = commit --amend --no-edit
-        cc = commit --message 'work in progress, find comments statrting TODO WIP'
+        cc = commit --message 'work in progress, find comments statrting WIP'
         p = push
         ll = log --oneline
         last = log -1 HEAD --stat
