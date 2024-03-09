@@ -18,9 +18,10 @@
         cm = commit --message
         ca = commit --amend --no-edit
         cc = commit --message 'work in progress, find comments statrting WIP'
-        cmr = commit --message 'refactoring'
+        cmr = commit --message 'refactor'
         cmf = commit --message 'formatting'
         cmt = commit --message 'fix typo'
+        cmc = commit --message 'clean up'
         p = push
         ll = log --oneline
         last = log -1 HEAD --stat
