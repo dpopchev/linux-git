@@ -22,6 +22,7 @@
         cmf = commit --message 'formatting'
         cmt = commit --message 'fix typo'
         cmc = commit --message 'clean up'
+        cmi = commit --message 'init'
         p = push
         ll = log --oneline
         last = log -1 HEAD --stat
