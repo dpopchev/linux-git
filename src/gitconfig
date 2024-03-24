@@ -17,12 +17,28 @@
         d = diff
         cm = commit --message
         ca = commit --amend --no-edit
-        cc = commit --message 'work in progress, find comments statrting WIP'
-        cmr = commit --message 'refactor'
-        cmf = commit --message 'formatting'
-        cmt = commit --message 'fix typo'
-        cmc = commit --message 'clean up'
-        cmi = commit --message 'init'
+        # code refactoring in src or test which does not fix a bug or introduce functionality
+        cc = "!f(){ git commit -m \"refactor: $1\";}; f"
+        # introduce new functionality
+        cmf = "!f(){ git commit -m \"feature: $1\";}; f"
+        # make a fix
+        cmb = "!f(){ git commit -m \"fix: $1\";}; f"
+        # changes do not relate to a fix, feature or modify any src or test file,
+        # e.g. update an dependency
+        cmc = "!f(){ git commit -m \"chore: $1\";}; f"
+        # changes impact documentation,e.g. README
+        cmd = "!f(){ git commit -m \"docs: $1\";}; f"
+        # changes do not affect the meaning of code,
+        # e.g. code formatting, white-space, etc
+        cms = "!f(){ git commit -m \"style: $1\";}; f"
+        # adding new or correcting previous tests
+        cmt = "!f(){ git commit -m \"test: $1\";}; f"
+        # continuous integration changes
+        cmpi = "!f(){ git commit -m \"ci: $1\";}; f"
+        # build system changes
+        cmpb = "!f(){ git commit -m \"build: $1\";}; f"
+        # initializing files into work tree
+        cmi = "!f(){ git commit -m \"inti: $1\";}; f"
         p = push
         ll = log --oneline
         last = log -1 HEAD --stat
