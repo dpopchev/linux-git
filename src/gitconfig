@@ -38,7 +38,7 @@
         # build system changes
         cmpb = "!f(){ git commit -m \"build: $1\";}; f"
         # initializing files into work tree
-        cmi = "!f(){ git commit -m \"inti: $1\";}; f"
+        cmi = "!f(){ git commit -m \"init: $1\";}; f"
         p = push
         ll = log --oneline
         last = log -1 HEAD --stat
@@ -47,6 +47,7 @@
         sweep = !git master && git fetch --prune && git branch -v --merged | sed -rn 's/^[[:blank:]]*([[:alnum:]\\/-]+)[[:blank:]]+\\w{7}[[:blank:]]+\\[gone\\][[:graph:][:blank:]]*/\\1/p' | xargs git branch -d
         f = !git fetch && git checkout
         gl = config --global --list
+        cl = config --get-regexp '^alias.c[cm]'
         r = rev-parse --show-toplevel
         undo = reset --soft HEAD~
         who = !git config --get user.name && git config --get user.email
